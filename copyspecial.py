@@ -7,7 +7,7 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 
 # give credits
-__author__ = "Ramon Hamilton and demo from study hall, Ruthie Mayodie"
+__author__ = "Ramon Hamilton and demo from study hall, Ruthie Mayodie "
 
 import re
 import os
