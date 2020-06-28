@@ -21,7 +21,7 @@ def get_special_paths(dirname):
     """Given a dirname, returns a list of all its special files."""
     new_list = [os.path.abspath(os.path.join(dirname, f))
         for f in (os.listdir(dirname))
-        if re.search(r'_(\w+)_', f)]
+        if re.search(r'__(\w+)__', f)]
     return new_list
 
     
@@ -49,7 +49,7 @@ def zip_to(path_list, dest_zip):
     print("Command I'm going to do:")
     print('zip -j', list_file)
     try:
-        subprocess.call(['zip', '-j', dest_zip] +path_list)
+        subprocess.call(['zip', '-j', dest_zip] + list_file)
     except OSError as e:
         print(e)
         exit(1)
